@@ -1,0 +1,1 @@
+SELECT * FROM db_study_202210_02.emp_mst;

@@ -7,7 +7,6 @@ values(0, "aaa", "1234", "aaa", "aaa@gmail.com", now(), now());
 insert into role_dtl
 values(0, 1, 2, now(), now());
 
-
 select
 	*
 from

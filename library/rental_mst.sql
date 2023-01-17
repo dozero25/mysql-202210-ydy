@@ -12,10 +12,17 @@ values
 	(0, 1, 471, null),
 	(0, 1, 472, null),
 	(0, 1, 473, null);
+
+update rental_dtl
+set
+	return_date = now()
+where
+	rental_dtl_id = 1;
     
 /* 사용자의 렌탈 가능 여부 */
 select
-	if(count(*) < 3, 'Y', 'N') as rental_flag
+	3 - count(*) as rental_count,
+    if(count(*) < 3, 'Y', 'N') as rental_flag
 from
 	rental_dtl rd
     left outer join rental_mst rm on(rm.rental_id = rd.rental_id)

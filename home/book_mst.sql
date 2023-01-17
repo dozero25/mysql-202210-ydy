@@ -1,4 +1,4 @@
-SELECT * FROM library.book_mst;
+SELECT * FROM library.book_mst order by book_code desc;
 
 select * from book_mst
 where publication_date like '2110%';

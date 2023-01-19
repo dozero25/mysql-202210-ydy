@@ -29,4 +29,14 @@ from
 where
 	rm.user_id = 1
 and rd.return_date is null;
+
+/*------------------------------*/
+
+select
+	count(*)
+from
+	rental_dtl
+where
+	book_id = 400
+and return_date is null;
     
